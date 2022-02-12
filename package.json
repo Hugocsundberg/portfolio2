@@ -1,0 +1,23 @@
+{
+  "name": "eleventy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-ts": "tsc --watch",
+    "watch-tailwind": "tailwindcss -i ./input.css -o ./_site/output.css --watch",
+    "watch-eleventy": "eleventy --serve",
+    "start": "concurrently \"npm:watch-*\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/animejs": "^3.1.4",
+    "animejs": "^3.2.1",
+    "concurrently": "^7.0.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.0.18"
+  }
+}
