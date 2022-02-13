@@ -1,17 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfolio</title>
     <script defer type="module" src="./script.js"></script>
     <link rel="stylesheet" href="./output.css" />
   </head>
-  <body>
-    <h1 class="bg-red-600">THIS IS HEADER</h1>
-    <div class="h-8 w-8 bg-teal-300"></div>
-    {{ content }}
-    <h1>THIS IS FOOTER</h1>
+  <body class="px-8 md:px-12 lg:px-20 bg-gradient-to-b from-blue-100 to-purple-100">
+    {{ content | safe }}
   </body>
 </html>

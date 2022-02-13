@@ -2,8 +2,12 @@
 layout: layouts/base.njk
 ---
 
-<ul>
- <h1>hello</h1>
-    {# {{ projects.project.title }} #}
-</ul>
-
+<nav class="pt-8 md:pt-12 lg:pt-20 box-border h-screen relative">
+    <p class="text-3xl mb-4 font-light">Hugo Sundberg</p>
+    <h1 class="text-7xl font-bold mb-36 md:text-8xl">Portfolio.</h1>
+    <ul>
+        <li class="mb-4"><a class="text-3xl font-bold" data-en="About me" href="">Om mig</a></li>
+        <li class="mb-4"><a class="text-3xl font-bold" data-en="Projects" href="">Projekt</a></li>
+    </ul>
+    <a class="absolute bottom-4" data-en="Switch to swedish" href="">Byt till engelska</a>
+</nav>

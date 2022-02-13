@@ -5,4 +5,5 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addPassthroughCopy("node_modules/animejs/lib/anime.es.js");
+  eleventyConfig.addPassthroughCopy("images");
 };
