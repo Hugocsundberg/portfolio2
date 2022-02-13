@@ -5,3 +5,8 @@
 * {
   box-sizing: border-box;
 }
+
+.move-right {
+  left: calc(100% - 24px);
+  transform: translate(-100%);
+}
