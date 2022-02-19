@@ -45,3 +45,20 @@ if (scrollToTopButton) {
       : scrollToTopButton.classList.add("move-right");
   });
 }
+
+// Change backgroun color on scroll
+const normalizeScroll = (scrollTop: number) => {
+  const maxScroll = 900;
+  return (scrollTop > maxScroll ? 1 : scrollTop / maxScroll) / 2;
+};
+
+const scrollSnapContainer: HTMLElement | null = document.querySelector(
+  "#scroll-snap-container"
+);
+
+scrollSnapContainer?.addEventListener("scroll", (e) => {
+  const target = e.target as HTMLElement;
+  const scrollValue = normalizeScroll(target.scrollTop);
+
+  // document.body.style.filter
+});
