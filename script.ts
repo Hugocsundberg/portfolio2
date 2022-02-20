@@ -125,3 +125,25 @@ const observer = new IntersectionObserver((e) => {
 observables.forEach((observable) => {
   observer.observe(observable);
 });
+
+// Language switch
+const switchButton = document.querySelector("#language-switch");
+let lang = "sv";
+
+switchButton?.addEventListener("click", () => {
+  lang === "sv" ? (lang = "en") : (lang = "sv");
+
+  const textElements: NodeListOf<HTMLElement> =
+    document.querySelectorAll("[data-en]");
+
+  if (lang === "en") {
+    textElements.forEach((element) => {
+      element.dataset.sv = element.textContent ?? "";
+      element.textContent = element.dataset.en ?? element.textContent;
+    });
+  } else {
+    textElements.forEach((element) => {
+      element.textContent = element.dataset.sv ?? element.textContent;
+    });
+  }
+});
