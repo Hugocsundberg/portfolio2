@@ -56,14 +56,14 @@ scrollContainer?.addEventListener("scroll", () => {
 if (scrollToTopButton) {
   window.addEventListener("touchstart", (e) => {
     if (arrowCanMove)
-      e.touches[0].clientX < window.innerWidth / 2
+      e.touches[0].clientX < window.innerWidth / 1.5
         ? scrollToTopButton.classList.remove("move-right")
         : scrollToTopButton.classList.add("move-right");
   });
 
   window.addEventListener("wheel", (e) => {
     if (arrowCanMove)
-      mouseXPosition < window.innerWidth / 2
+      mouseXPosition < window.innerWidth / 1.5
         ? scrollToTopButton.classList.remove("move-right")
         : scrollToTopButton.classList.add("move-right");
   });
@@ -100,4 +100,28 @@ arrowInformationButton?.addEventListener("click", () => {
     document.querySelector(".info-card")?.classList.remove("translate-x-0");
   }, 200);
   window.localStorage.setItem("hasPressedArrowInformationOkButton", "true");
+});
+
+// Add animation to cards on scroll
+const observables = document.querySelectorAll(".shall-animate");
+
+const animateIn = (target: Element) => {
+  anime({
+    targets: target,
+    translateY: [200, 0],
+    easing: "spring(1, 80, 17, 1)",
+  });
+};
+
+const observer = new IntersectionObserver((e) => {
+  e.forEach((entry) => {
+    if (!entry.isIntersecting) return;
+    if (!entry.target.classList.contains("shall-animate")) return;
+    entry.target.classList.remove("shall-animate");
+    animateIn(entry.target);
+  });
+});
+
+observables.forEach((observable) => {
+  observer.observe(observable);
 });
