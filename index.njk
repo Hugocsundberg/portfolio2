@@ -11,7 +11,7 @@ layout: layouts/base.njk
             <h1 class="animate-in text-7xl font-bold md:text-8xl">Portfolio.</h1>
         </div>
         <ul>
-            <li class="animate-in mb-4"><a class="{{textGradientOnHover}} text-3xl font-bold" data-en="Projects" href="">Projekt</a></li>
+            <li class="animate-in mb-4"><a class="{{textGradientOnHover}} text-3xl font-bold" data-en="Projects" href="#projects">Projekt</a></li>
             <li class="animate-in mb-4"><a class="{{textGradientOnHover}} text-3xl font-bold" data-en="About me" href="">Om mig</a></li>
         </ul>
         <div class="animate-in flex items-center gap-1 mb-10">
@@ -23,7 +23,7 @@ layout: layouts/base.njk
     {% set textCardBaseStyle = "translate-y-[200px] backdrop-blur-lg shadow-card bg-white/80 relative p-card-small md:p-card-medium lg:p-card-large -mt-small md:-mt-medium lg:-mt-large w-full max-w-[460px] rounded-card-medium bg-white shall-animate" %}
     {% for project in projects %}
     {% set imageSrc = project.images[0].path %}
-    <section class="relative mb-8 xs:mb-0 xs:h-screen snap-start w-full flex items-center">
+    <section {% if(loop.first) %} id="projects" {% endif %} class="relative mb-8 xs:mb-0 xs:h-screen snap-start w-full flex items-center">
         <div class="w-full">
             {% if loop.index % 2 == 0 %}
         {# Image to right #}
