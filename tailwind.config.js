@@ -4,6 +4,7 @@ module.exports = {
     extend: {
       animation: {
         gradient: "gradient 15s ease infinite",
+        "gradient-fast": "gradient 7s ease infinite",
       },
       keyframes: {
         gradient: {
@@ -20,14 +21,19 @@ module.exports = {
       },
       backgroundSize: {
         gradient: "400% 400%",
+        gradientDark: "400% 400%",
       },
       backgroundImage: {
         gradient:
           "linear-gradient(119deg, rgba(255,255,255,1) 17%, rgba(206,247,255,1) 57%, rgba(251,255,162,1) 100%);",
+        gradientDark:
+          "linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)",
       },
       borderRadius: {
         "image-medium": "0 20px 20px 0",
         "image-small": "0 10px 10px 0",
+        "image-medium-right": "20px 0 0 20px",
+        "image-small-right": "10px 0 0 10px",
         "card-medium": "20px",
         "card-small": "10px",
         "icon-medium": "0 11px 11px 0",
