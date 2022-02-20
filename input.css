@@ -4,9 +4,28 @@
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 .move-right {
-  left: calc(100% - 24px);
+  left: calc(100% - 72px);
   transform: translate(-100%);
+}
+
+.top-arrow {
+  transform: scale(0);
+  transition: 500ms;
+}
+
+.scale-1 {
+  transform: scale(1);
+}
+
+.info-card {
+  transform: translateX(calc(-100% - 24px));
+  transition: 500ms;
+}
+
+.translate-x-0 {
+  transform: translateX(0);
 }

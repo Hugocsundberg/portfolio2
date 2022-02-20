@@ -10,8 +10,13 @@
   </head>
   <body class="bg-gradient overflow-x-hidden animate-gradient">
     {{ content | safe }}
-      <button class="fixed left-6 bottom-8 shadow-lg transition-all cursor-pointer scroll-to-top rounded-full h-12 w-12 flex justify-center items-center bg-white">
+      <a href="#top" class="top-arrow fixed left-6 bottom-8 shadow-card-smaller transition-all cursor-pointer scroll-to-top rounded-full h-12 w-12 flex justify-center items-center bg-white">
           <img class="h-6" src="images/arrowUp.svg" alt="">
-      </button>
+      </a>
+      <div class="info-card absolute bottom-12 bg-white min-h-12 flex gap-2 ml-6 mb-10 items-center rounded-card-medium p-[9px] shadow-card-small">
+        <p class="rounded-full border-2 min-h-6 min-w-6 h-6 flex-none w-6 flex justify-center items-center border-black border-solid">i</p>
+        <p data-en="Arrow will adjust its position based on where on the screen you scroll">Pilen kommer att ändra sin position baserat på var på skärmen du skrollar.</p>
+        <button id="button-confirm-arrow-information" class="flex-none active:scale-90 transition duration-75 rounded-full bg-green-500 min-h-8 min-w-10 h-8 w-10 text-white">OK</button>
+      </div>
   </body>
 </html>

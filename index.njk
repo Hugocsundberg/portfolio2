@@ -2,9 +2,9 @@
 layout: layouts/base.njk
 ---
 
-<div class="px-small md:px-medium lg:px-large box-border snap-proximity snap-y w-screen h-screen overflow-y-auto">
+<div id="scroll-container" class="px-small md:px-medium lg:px-large box-border xs:snap-proximity xs:snap-y w-screen h-screen overflow-y-auto">
     <nav class="pt-small md:pt-medium snap-center lg:pt-large box-border h-screen relative">
-        <p class="animate-in text-3xl mb-4 font-light">Hugo Sundberg</p>
+        <p id="top" class="animate-in text-3xl mb-4 font-light">Hugo Sundberg</p>
         <h1 class="animate-in text-7xl font-bold mb-36 md:text-8xl">Portfolio.</h1>
         <ul>
             <li class="animate-in mb-4"><a class="text-3xl font-bold" data-en="About me" href="">Om mig</a></li>
@@ -13,12 +13,12 @@ layout: layouts/base.njk
         <a class="animate-in absolute bottom-4" data-en="Switch to swedish" href="">Byt till engelska</a>
     </nav>
     {% for project in projects %}
-    <section class="relative h-screen snap-start w-full border-b-2 border-cyan-400 flex items-center">
+    <section class="relative h-screen snap-start w-full flex items-center">
         <div class="w-full">
-            <div class="left-0 w-full">
-                <img class="object-cover h-[400px] rounded-card-medium w-4/5" src="{{project.images[0].path}}" alt="">
+            <div class="relative -ml-small md:-ml-medium lg:-ml-large left-0 w-full">
+                <img class="object-cover image lg:h-[58vh] h-[30vh] xs:h-[48vh] rounded-image-medium w-full max-w-[1024px]" src="{{project.images[0].path}}" alt="">
             </div>
-            <div class="h-96 w-96 rounded-card-medium bg-white">
+            <div class="backdrop-blur-lg shadow-card bg-white/80 relative p-card-small md:p-card-medium lg:p-card-large -mt-small md:-mt-medium lg:-mt-large w-full max-w-[460px] rounded-card-medium bg-white">
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut pariatur molestiae doloremque amet quidem sequi quo. Autem omnis, perferendis nostrum at doloremque similique! Optio nemo explicabo laboriosam commodi tempore quis?</p>
             </div>
         </div>

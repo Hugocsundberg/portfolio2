@@ -34,14 +34,70 @@ tl.add(
 );
 
 // Scroll to top arrow
-const scrollToTopButton: HTMLButtonElement | null = document.querySelector(
-  "button.scroll-to-top"
-);
+const scrollTriggerPosition = 600;
+const scrollContainer = document.querySelector("#scroll-container");
+const scrollToTopButton: HTMLButtonElement | null =
+  document.querySelector("a.scroll-to-top");
+let mouseXPosition = 0;
+let arrowCanMove = false;
+
+window.addEventListener("mousemove", (e) => {
+  mouseXPosition = e.clientX;
+});
+
+scrollContainer?.addEventListener("scroll", () => {
+  if (scrollContainer.scrollTop > scrollTriggerPosition) {
+    setTimeout(() => {
+      arrowCanMove = true;
+    }, 2000);
+  }
+});
 
 if (scrollToTopButton) {
   window.addEventListener("touchstart", (e) => {
-    e.touches[0].clientX < window.innerWidth / 2
-      ? scrollToTopButton.classList.remove("move-right")
-      : scrollToTopButton.classList.add("move-right");
+    if (arrowCanMove)
+      e.touches[0].clientX < window.innerWidth / 2
+        ? scrollToTopButton.classList.remove("move-right")
+        : scrollToTopButton.classList.add("move-right");
+  });
+
+  window.addEventListener("wheel", (e) => {
+    if (arrowCanMove)
+      mouseXPosition < window.innerWidth / 2
+        ? scrollToTopButton.classList.remove("move-right")
+        : scrollToTopButton.classList.add("move-right");
   });
 }
+
+scrollContainer?.addEventListener("scroll", (e) => {
+  const target = e.target as HTMLElement | null;
+  const hasPressedArrowInformationOkButton =
+    window.localStorage.getItem("hasPressedArrowInformationOkButton") === "true"
+      ? true
+      : false;
+
+  if (target && target.scrollTop > scrollTriggerPosition) {
+    document.querySelector(".top-arrow")?.classList.add("scale-1");
+    if (!hasPressedArrowInformationOkButton)
+      setTimeout(() => {
+        if (!hasPressedArrowInformationOkButton)
+          document.querySelector(".info-card")?.classList.add("translate-x-0");
+      }, 500);
+  } else {
+    document.querySelector(".top-arrow")?.classList.remove("scale-1");
+    setTimeout(() => {
+      document.querySelector(".info-card")?.classList.remove("translate-x-0");
+    }, 500);
+  }
+});
+
+// Arrow information box
+const arrowInformationButton = document.querySelector(
+  "#button-confirm-arrow-information"
+);
+arrowInformationButton?.addEventListener("click", () => {
+  setTimeout(() => {
+    document.querySelector(".info-card")?.classList.remove("translate-x-0");
+  }, 200);
+  window.localStorage.setItem("hasPressedArrowInformationOkButton", "true");
+});
