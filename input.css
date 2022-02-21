@@ -29,3 +29,7 @@
 .translate-x-0 {
   transform: translateX(0);
 }
+
+.img-blue-on-hover:hover img {
+  opacity: 1;
+}

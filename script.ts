@@ -26,7 +26,6 @@ tl.add({
 tl.add(
   {
     targets: "h1 span",
-    color: ["rgb(0, 0, 0)", "rgb(255, 255, 255)", "rgb(0, 0, 0)"],
     easing: "spring(3, 100, 17, 1)",
     delay: anime.stagger(75),
   },

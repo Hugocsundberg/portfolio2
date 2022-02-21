@@ -2,7 +2,7 @@
 layout: layouts/base.njk
 ---
 
-    {% set textGradientOnHover = "transition bg-gradientDark bg-clip-text hover:text-transparent active:text-transparent animate-gradient-fast" %}
+    {% set textGradientOnHover = "transition bg-clip-text hover:text-transparent active:text-transparent animate-gradient-fast" %}
 
 <div id="scroll-container" class="px-small md:px-medium lg:px-large box-border xs:snap-proximity xs:snap-y w-screen h-screen overflow-y-auto">
     <nav class="flex flex-col justify-between pt-small md:pt-medium snap-center lg:pt-large box-border h-screen relative">
@@ -11,8 +11,8 @@ layout: layouts/base.njk
             <h1 class="animate-in text-7xl font-bold md:text-8xl">Portfolio.</h1>
         </div>
         <ul>
-            <li class="animate-in mb-4"><a class="{{textGradientOnHover}} text-3xl font-bold" data-en="Projects" href="#projects">Projekt</a></li>
-            <li class="animate-in mb-4"><a class="{{textGradientOnHover}} text-3xl font-bold" data-en="About me" href="">Om mig</a></li>
+            <li class="animate-in mb-4"><a class="bg-gradientDarkRed {{textGradientOnHover}} text-3xl font-bold" data-en="Projects" href="#projects">Projekt</a></li>
+            <li class="animate-in mb-4"><a class="bg-gradientDarkBlue {{textGradientOnHover}} text-3xl font-bold" data-en="About me" href="">Om mig</a></li>
         </ul>
         <div class="animate-in flex items-center gap-1 mb-10">
             <img class="h-4" src="images/icons/lang.svg" alt="">

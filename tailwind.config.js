@@ -22,12 +22,14 @@ module.exports = {
       backgroundSize: {
         gradient: "400% 400%",
         gradientDark: "400% 400%",
+        gradientDarkRed: "400% 400%",
+        gradientDarkBlue: "400% 400%",
       },
       backgroundImage: {
         gradient:
           "linear-gradient(119deg, rgba(255,255,255,1) 17%, rgba(206,247,255,1) 57%, rgba(251,255,162,1) 100%);",
-        gradientDark:
-          "linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)",
+        gradientDarkBlue: "linear-gradient(-45deg, #1A2980, #26D0CE)",
+        gradientDarkRed: "linear-gradient(-45deg, #ee7752, #e73c7e, #de75f5)",
       },
       borderRadius: {
         "image-medium": "0 20px 20px 0",
