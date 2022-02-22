@@ -21,7 +21,7 @@ layout: layouts/base.njk
     </nav>
     {% set imageBaseStyle = "object-cover image lg:h-[58vh] h-[30vh] xs:h-[48vh] w-full max-w-[1024px]" %}
     {% set textCardBaseStyle = "translate-y-[200px] backdrop-blur-lg shadow-card bg-white/80 relative p-card-small md:p-card-medium lg:p-card-large -mt-small md:-mt-medium lg:-mt-large w-full max-w-[460px] rounded-card-medium bg-white shall-animate" %}
-    {% set techContainerBaseStyle = "absolute left-[10px] top-[10px] flex gap-[10px]" %}
+    {% set techContainerBaseStyle = "absolute top-[10px] flex gap-[10px]" %}
     {% set techImageBaseStyle = "hover:rotate-6 transition duration-300 relative invisible xs:visible h-16 w-16 rounded-icon-medium object-cover" %}
     {% for project in projects %}
     {% set imageSrc = project.images[0].path %}
@@ -30,7 +30,7 @@ layout: layouts/base.njk
             {% if loop.index % 2 == 0 %}
         {# Image to right #}
                 <div class="max-w-[1024px] ml-auto relative translate-x-small md:translate-x-medium lg:translate-x-large right-0 w-full">
-                    <div class="{{techContainerBaseStyle}}">
+                    <div class="{{techContainerBaseStyle}} left-[10px]">
                         {% for technnology in project.technnologies %}
                             <a href="{{technnology.url}}"><img class="{{techImageBaseStyle}}" src="{{technnology.path}}" alt="{{technnology.name}}"></a> 
                         {% endfor %}
@@ -41,7 +41,7 @@ layout: layouts/base.njk
             {% else %} 
         {# Image to left #}
                  <div class="max-w-[1024px] relative -ml-small md:-ml-medium lg:-ml-large left-0 w-full">
-                    <div class="{{techContainerBaseStyle}}">
+                    <div class="{{techContainerBaseStyle}} right-[10px]">
                         {% for technnology in project.technnologies %}
                             <a href="{{technnology.url}}"><img class="{{techImageBaseStyle}}" src="{{technnology.path}}" alt="{{technnology.name}}"></a> 
                         {% endfor %}
