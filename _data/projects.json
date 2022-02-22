@@ -12,12 +12,14 @@
       {
         "slug": "ts",
         "name": "Typescript",
-        "path": "images/icons/typescript.svg"
+        "path": "images/icons/typescript.svg",
+        "url": "https://www.typescriptlang.org/"
       },
       {
         "slug": "tailwind",
         "name": "TailwindCSS",
-        "path": "images/icons/tailwind.png"
+        "path": "images/icons/tailwind.png",
+        "url": "https://www.typescriptlang.org/"
       }
     ],
     "images": [
@@ -43,12 +45,14 @@
       {
         "slug": "ts",
         "name": "Typescript",
-        "path": "images/icons/typescript.svg"
+        "path": "images/icons/typescript.svg",
+        "url": "https://www.typescriptlang.org/"
       },
       {
         "slug": "tailwind",
         "name": "TailwindCSS",
-        "path": "images/icons/tailwind.png"
+        "path": "images/icons/tailwind.png",
+        "url": "https://www.typescriptlang.org/"
       }
     ],
     "images": [

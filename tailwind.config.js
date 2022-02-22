@@ -38,8 +38,8 @@ module.exports = {
         "image-small-right": "10px 0 0 10px",
         "card-medium": "20px",
         "card-small": "10px",
-        "icon-medium": "0 11px 11px 0",
-        "icon-small": "0 7px 7px 0",
+        "icon-medium": "11px 11px 11px 11px",
+        "icon-small": "7px 7px 7px 7px",
       },
       spacing: {
         small: "32px",
