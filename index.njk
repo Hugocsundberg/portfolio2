@@ -12,7 +12,7 @@ layout: layouts/base.njk
         </div>
         <ul>
             <li class="animate-in mb-4"><a class="bg-gradientDarkRed {{textGradientOnHover}} text-3xl font-bold" data-en="Projects" href="#projects">Projekt</a></li>
-            <li class="animate-in mb-4"><a class="bg-gradientDarkBlue {{textGradientOnHover}} text-3xl font-bold" data-en="About me" href="">Om mig</a></li>
+            <li class="animate-in mb-4"><a class="bg-gradientDarkBlue {{textGradientOnHover}} text-3xl font-bold" data-en="About me" href="#about-me">Om mig</a></li>
         </ul>
         <div class="animate-in flex items-center gap-1 mb-10">
             <img class="h-4" src="images/icons/lang.svg" alt="">
@@ -55,4 +55,22 @@ layout: layouts/base.njk
         </div>
     </section>
     {% endfor %}
+    <section id="about-me" class="xs:h-screen snap-start flex flex-col gap-3 md:gap-4 aboutMeBreak:items-center justify-center">
+        <div class="flex-col-reverse aboutMeBreak:flex-row flex gap-3 md:gap-8">
+            <img class="max-w-[366px] object-cover rounded-card-medium shadow-card-small h-[20vh] xs:h-[25vh] md:h-[40vh]" src="images/me.jpg" alt="">
+            <h2 class="text-5xl sm:text-6xl md:text-8xl font-bold mt-4" data-en="About me">Om mig.</h2>
+        </div>
+        <div class=" backdrop-blur-lg shadow-card bg-white/80 relative p-card-small md:p-card-medium lg:p-card-large w-full max-w-[580px] rounded-card-medium bg-white shall-animate">
+            <h3>Hugo Sundberg</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis egestas pretium aenean pharetra. Orci eu lobortis elementum nibh tellus molestie. Vulputate dignissim suspendisse in est. Vel pharetra vel turpis nunc. Malesuada nunc vel risus commodo. Nisi vitae suscipit tellus mauris. Posuere morbi leo urna molestie at elementum eu. Urna duis convallis convallis tellus. Urna molestie at elementum eu. Nunc sed blandit libero volutpat.</p>
+            <div>
+                <img src="images/icons/site-icon.svg" alt="">
+                <p data-en="Visit the site" >Besök sidan</p>
+            </div>
+            <div>
+                <img src="images/icons/gh-icon.svg" alt="">
+                <p data-en="Or check out the github repository" >Eller kolla in repot på github</p>
+            </div>
+        </div>
+    </section>
 </div>
