@@ -30,7 +30,9 @@
         },
         "path": "images/projects/project1/cat.jpg"
       }
-    ]
+    ],
+    "site": "http://google.se",
+    "github": "http://google.se/images"
   },
   {
     "title": {

@@ -25,7 +25,7 @@ layout: layouts/base.njk
     {% set techImageBaseStyle = "hover:rotate-6 transition duration-300 relative invisible xs:visible h-16 w-16 rounded-icon-medium object-cover" %}
     {% for project in projects %}
     {% set imageSrc = project.images[0].path %}
-    <section {% if(loop.first) %} id="projects" {% endif %} class="relative mb-8 xs:mb-0 xs:h-screen snap-start w-full flex items-center">
+    <section {% if(loop.first) %} id="projects" {% endif %} class="relative mb-16 xs:h-screen snap-start w-full flex items-center">
         <div class="w-full">
             {% if loop.index % 2 == 0 %}
         {# Image to right #}
@@ -51,25 +51,39 @@ layout: layouts/base.njk
                 <div class="{{textCardBaseStyle}}">
             {% endif %}
                 <p data-en="{{project.description.en}}">{{project.description.sv}}</p>
+                <div class="flex gap-3 my-3">
+                    <img class="w-6" src="images/icons/site-icon.svg" alt="">
+                    <a class="underline" href="{{project.site}}" data-en="Visit the site">Besök sidan</a>
+                </div>
+                <div class="flex gap-3 mb-3">
+                    <img class="w-6" src="images/icons/gh-icon.svg" alt="">
+                    <a class="underline" href="{{project.github}}" data-en="Or check out the github repository" >Eller kolla in repot på github</a>
+                </div>
             </div>
         </div>
     </section>
     {% endfor %}
-    <section id="about-me" class="xs:h-screen snap-start flex flex-col gap-3 md:gap-4 aboutMeBreak:items-center justify-center">
-        <div class="flex-col-reverse aboutMeBreak:flex-row flex gap-3 md:gap-8">
-            <img class="max-w-[366px] object-cover rounded-card-medium shadow-card-small h-[20vh] xs:h-[25vh] md:h-[40vh]" src="images/me.jpg" alt="">
-            <h2 class="text-5xl sm:text-6xl md:text-8xl font-bold mt-4" data-en="About me">Om mig.</h2>
+    <section id="about-me" class="flex mb-small md:mb-medium flex-col gap-0 md:gap-4 aboutMeBreak:items-center justify-center">
+        <div class="flex-col-reverse aboutMeBreak:flex-row flex gap-5 md:gap-8">
+            <img class="max-w-[366px] object-cover rounded-card-medium shadow-card-small h-[30vh] xs:h-[35vh] md:h-[40vh]" src="images/me.jpg" alt="">
+            <h2 class="text-6xl sm:text-7xl md:text-8xl font-bold mt-4" data-en="About me.">Om mig.</h2>
         </div>
-        <div class=" backdrop-blur-lg shadow-card bg-white/80 relative p-card-small md:p-card-medium lg:p-card-large w-full max-w-[580px] rounded-card-medium bg-white shall-animate">
-            <h3>Hugo Sundberg</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis egestas pretium aenean pharetra. Orci eu lobortis elementum nibh tellus molestie. Vulputate dignissim suspendisse in est. Vel pharetra vel turpis nunc. Malesuada nunc vel risus commodo. Nisi vitae suscipit tellus mauris. Posuere morbi leo urna molestie at elementum eu. Urna duis convallis convallis tellus. Urna molestie at elementum eu. Nunc sed blandit libero volutpat.</p>
-            <div>
-                <img src="images/icons/site-icon.svg" alt="">
-                <p data-en="Visit the site" >Besök sidan</p>
-            </div>
-            <div>
-                <img src="images/icons/gh-icon.svg" alt="">
-                <p data-en="Or check out the github repository" >Eller kolla in repot på github</p>
+        <div class="relative pr-small md:pr-medium">
+            <div class="-mt-small left-small backdrop-blur-lg shadow-card bg-white/80 relative p-card-small md:p-card-medium lg:p-card-large w-full max-w-[580px] rounded-card-medium bg-white shall-animate">
+                <h3 class="text-4xl mb-card-small md:mb-card-medium lg:mb-card-large">Hugo Sundberg</h3>
+                <p class="mb-5 md:mb-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis egestas pretium aenean pharetra. Orci eu lobortis elementum nibh tellus molestie. Vulputate dignissim suspendisse in est. Vel pharetra vel turpis nunc. Malesuada nunc vel risus commodo. Nisi vitae suscipit tellus mauris. Posuere morbi leo urna molestie at elementum eu. Urna duis convallis convallis tellus. Urna molestie at elementum eu. Nunc sed blandit libero volutpat.</p>
+                <div class="flex gap-3 mb-3">
+                    <img class="w-6" src="images/icons/gh-icon.svg" alt="">
+                    <a class="underline" href="https://github.com/Hugocsundberg" data-en="Check out my github for more projects">Kolla in min github för fler projekt</a>
+                </div>
+                <div class="flex gap-3 mb-3">
+                    <img class="w-6" src="images/icons/linkedin.svg" alt="">
+                    <a class="underline" href="https://www.linkedin.com/in/hugosundberg/" data-en="My linkedIn profile" >Min LinkedIn profil</a>
+                </div>
+                <div class="flex gap-3 mb-3">
+                    <img class="w-6" src="images/icons/document.svg" alt="">
+                    <a class="underline" href="https://hugosundbergcv.netlify.app/?lang" data-en="Resume">CV</a>
+                </div>
             </div>
         </div>
     </section>
