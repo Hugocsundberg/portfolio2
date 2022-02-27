@@ -1,12 +1,12 @@
 [
   {
     "title": {
-      "en": "Project one",
-      "sv": "Project ett"
+      "en": "Marinas Ateljé",
+      "sv": "Marinas Ateljé"
     },
     "description": {
-      "en": "The Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis egestas pretium aenean pharetra. Orci eu lobortis elementum nibh tellus molestie. Vulputate dignissim suspendisse in est. Vel pharetra vel turpis nunc. Malesuada nunc vel risus commodo. Nisi vitae suscipit tellus mauris. Posuere morbi leo urna molestie at elementum eu. Urna duis convallis convallis tellus. Urna molestie at elementum eu. Nunc sed blandit libero volutpat.",
-      "sv": "Lorem ipsumen dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis egestas pretium aenean pharetra. Orci eu lobortis elementum nibh tellus molestie. Vulputate dignissim suspendisse in est. Vel pharetra vel turpis nunc. Malesuada nunc vel risus commodo. Nisi vitae suscipit tellus mauris. Posuere morbi leo urna molestie at elementum eu. Urna duis convallis convallis tellus. Urna molestie at elementum eu. Nunc sed blandit libero volutpat."
+      "en": "Marina's Ateljé is my graduation thesis that I built for my grandmother who paints and sells her art as a hobby. The project is a blog and e-commerce built in NextJS with Typescript, Sanity, and Klarna. The site supports reservation of paintings, lazy loading of posts and observes an RXJS object to update paintings immediately when they are reserved by another client. The page is used live at the moment, though without Klarna activated at the moment due to having to register a company first. The link leads to a branch of the page with Klarna activated in 'Test drive'.",
+      "sv": "Marinas Ateljé är mitt examensarbete som jag byggde till min mormor som målar och säljer tavlor som hobbyverksamhet. Projektet är en blogg och ehandel byggd i NextJS med Typescript, Sanity, och Klarna. Sidan har stöd för reservering av tavlor, lazy loading av inlägg och observerar ett RXJS-objekt för att uppdatera tavlor direkt när de blir reserverade av en annan klient. Sidan används skarpt i nuläget, dock utan klarna aktiverat p.g.a. att vi först behöver registrera bolag. Länken leder till en branch av sidan med Klarna aktiverat i 'Test drive'."
     },
     "technnologies": [
       {
@@ -16,10 +16,16 @@
         "url": "https://www.typescriptlang.org/"
       },
       {
-        "slug": "tailwind",
-        "name": "TailwindCSS",
-        "path": "images/icons/tailwind.png",
-        "url": "https://www.typescriptlang.org/"
+        "slug": "style",
+        "name": "Styled Components",
+        "path": "images/icons/style.png",
+        "url": "https://styled-components.com/"
+      },
+      {
+        "slug": "next",
+        "name": "NextJS",
+        "path": "images/icons/nextjs.png",
+        "url": "https://dev.to/barnabas19/next-js-intro-and-setup-51g4"
       }
     ],
     "images": [
@@ -28,7 +34,7 @@
           "en": "image",
           "sv": "bild"
         },
-        "path": "images/projects/project1/cat.jpg"
+        "path": "images/projects/marinasAtelje/marinas_txj2tg_c_scale,w_190.png 190w, images/projects/marinasAtelje/marinas_txj2tg_c_scale,w_594.png 594w, images/projects/marinasAtelje/marinas_txj2tg_c_scale,w_857.png 857w, images/projects/marinasAtelje/marinas_txj2tg_c_scale,w_1059.png 1059w, images/projects/marinasAtelje/marinas_txj2tg_c_scale,w_1208.png 1208w, images/projects/marinasAtelje/marinas_txj2tg_c_scale,w_1369.png 1369w, images/projects/marinasAtelje/marinas_txj2tg_c_scale,w_1522.png 1522w, images/projects/marinasAtelje/marinas_txj2tg_c_scale,w_1651.png 1651w, images/projects/marinasAtelje/marinas_txj2tg_c_scale,w_1764.png 1764w, images/projects/marinasAtelje/marinas_txj2tg_c_scale,w_1889.png 1889w, images/projects/marinasAtelje/marinas_txj2tg_c_scale,w_1994.png 1994w, images/projects/marinasAtelje/marinas_txj2tg_c_scale,w_2040.png 2040w"
       }
     ],
     "site": "http://google.se",
