@@ -33,3 +33,7 @@
 .img-blue-on-hover:hover img {
   opacity: 1;
 }
+
+.show-child-p-on-hover:hover p {
+  opacity: 1;
+}

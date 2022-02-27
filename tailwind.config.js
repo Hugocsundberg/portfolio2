@@ -28,7 +28,7 @@ module.exports = {
       backgroundImage: {
         gradient:
           "linear-gradient(119deg, rgba(255,255,255,1) 17%, rgba(206,247,255,1) 57%, rgba(251,255,162,1) 100%);",
-        gradientDarkBlue: "linear-gradient(-45deg, #1A2980, #26D0CE)",
+        gradientDarkBlue: "linear-gradient(-45deg, #b621fe, #1fd1f9)",
         gradientDarkRed: "linear-gradient(-45deg, #ee7752, #e73c7e, #de75f5)",
       },
       borderRadius: {
