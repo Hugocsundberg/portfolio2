@@ -24,8 +24,26 @@
       {
         "slug": "next",
         "name": "NextJS",
-        "path": "images/icons/nextjs.png",
+        "path": "images/icons/next.png",
         "url": "https://dev.to/barnabas19/next-js-intro-and-setup-51g4"
+      },
+      {
+        "slug": "sanity",
+        "name": "Sanity",
+        "path": "images/icons/sanity.png",
+        "url": "https://www.sanity.io/"
+      },
+      {
+        "slug": "klarna",
+        "name": "Klarna",
+        "path": "images/icons/klarna.jpeg",
+        "url": "https://docs.klarna.com/"
+      },
+      {
+        "slug": "react",
+        "name": "React",
+        "path": "images/icons/react.png",
+        "url": "https://docs.klarna.com/"
       }
     ],
     "images": [
@@ -42,25 +60,31 @@
   },
   {
     "title": {
-      "en": "Project Ny",
-      "sv": "Project ett"
+      "en": "Speed Feed Social Network",
+      "sv": "Speed Feed Socialt Nätverk"
     },
     "description": {
-      "en": "The Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis egestas pretium aenean pharetra. Orci eu lobortis elementum nibh tellus molestie. Vulputate dignissim suspendisse in est. Vel pharetra vel turpis nunc. Malesuada nunc vel risus commodo. Nisi vitae suscipit tellus mauris. Posuere morbi leo urna molestie at elementum eu. Urna duis convallis convallis tellus. Urna molestie at elementum eu. Nunc sed blandit libero volutpat.",
-      "sv": "Lorem ipsumen dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis egestas pretium aenean pharetra. Orci eu lobortis elementum nibh tellus molestie. Vulputate dignissim suspendisse in est. Vel pharetra vel turpis nunc. Malesuada nunc vel risus commodo. Nisi vitae suscipit tellus mauris. Posuere morbi leo urna molestie at elementum eu. Urna duis convallis convallis tellus. Urna molestie at elementum eu. Nunc sed blandit libero volutpat."
+      "en": "Speed Feed is a social network designed and created by myself with native PHP, JS and CSS. The project is hosted on Heroku with a Postgres database.",
+      "sv": "Speed Feed är ett socialt nätverk designat och skapat av mig med native PHP, JS och CSS. Projektet är hostat på Heroku med en Postgres databas."
     },
     "technnologies": [
       {
-        "slug": "ts",
-        "name": "Typescript",
-        "path": "images/icons/typescript.svg",
-        "url": "https://www.typescriptlang.org/"
+        "slug": "php",
+        "name": "PHP",
+        "path": "images/icons/php.jpeg",
+        "url": "https://www.php.net/"
       },
       {
-        "slug": "tailwind",
-        "name": "TailwindCSS",
-        "path": "images/icons/tailwind.png",
-        "url": "https://www.typescriptlang.org/"
+        "slug": "postgres",
+        "name": "PostgreSQL",
+        "path": "images/icons/postgres.png",
+        "url": "https://www.postgresql.org/"
+      },
+      {
+        "slug": "js",
+        "name": "Javascript",
+        "path": "images/icons/js.png",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
       }
     ],
     "images": [
