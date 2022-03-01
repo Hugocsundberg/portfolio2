@@ -36,7 +36,7 @@ layout: layouts/base.njk
                             <a class="show-child-p-on-hover h-12 w-12 small:h-14 small:w-14 md:h-16 md:w-16 hover:rotate-6 transition duration-300" href="{{technnology.url}}"><img class="{{techImageBaseStyle}}" src="{{technnology.path}}" alt="{{technnology.name}}"><p class="opacity-0 transition-opacity duration-300 whitespace-nowrap bg-white/80 shadow-card-small backdrop-blur-lg rounded-icon-small md:rounded-icon-medium mt-1 w-fit px-2 py-[2px]">{{technnology.name}}</p></a> 
                         {% endfor %}
                     </div>
-                    <img class="{{imageBaseStyle}} ml-auto rounded-image-medium-right" srcset="{{imageSrc}}" alt="">
+                    <img sizes="(max-width: 1080px) 80vw, 1024px" class="{{imageBaseStyle}} ml-auto rounded-image-medium-right" srcset="{{imageSrc}}" alt="">
                 </div>
                 <div class="{{textCardBaseStyle}} ml-auto">
             {% else %} 
@@ -47,7 +47,7 @@ layout: layouts/base.njk
                             <a class="show-child-p-on-hover h-12 w-12 small:h-14 small:w-14 md:h-16 md:w-16 hover:rotate-6 transition duration-300" href="{{technnology.url}}"><img class="{{techImageBaseStyle}}" src="{{technnology.path}}" alt="{{technnology.name}}"><p class="opacity-0 transition-opacity duration-300 whitespace-nowrap bg-white/80 shadow-card-small backdrop-blur-lg rounded-icon-small md:rounded-icon-medium mt-1 w-fit px-2 py-[2px]">{{technnology.name}}</p></a> 
                         {% endfor %}
                     </div>
-                    <img class="{{imageBaseStyle}} rounded-image-medium" srcset="{{imageSrc}}" alt="">
+                    <img sizes="(max-width: 1080px) 80vw, 1024px" class="{{imageBaseStyle}} rounded-image-medium" srcset="{{imageSrc}}" alt="">
                 </div>
                 <div class="{{textCardBaseStyle}}">
             {% endif %}
