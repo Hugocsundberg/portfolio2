@@ -55,8 +55,8 @@
         "path": "images/projects/marinasAtelje/marinas_txj2tg_c_scale,w_190.png 190w, images/projects/marinasAtelje/marinas_txj2tg_c_scale,w_594.png 594w, images/projects/marinasAtelje/marinas_txj2tg_c_scale,w_857.png 857w, images/projects/marinasAtelje/marinas_txj2tg_c_scale,w_1059.png 1059w, images/projects/marinasAtelje/marinas_txj2tg_c_scale,w_1208.png 1208w, images/projects/marinasAtelje/marinas_txj2tg_c_scale,w_1369.png 1369w, images/projects/marinasAtelje/marinas_txj2tg_c_scale,w_1522.png 1522w, images/projects/marinasAtelje/marinas_txj2tg_c_scale,w_1651.png 1651w, images/projects/marinasAtelje/marinas_txj2tg_c_scale,w_1764.png 1764w, images/projects/marinasAtelje/marinas_txj2tg_c_scale,w_1889.png 1889w, images/projects/marinasAtelje/marinas_txj2tg_c_scale,w_1994.png 1994w, images/projects/marinasAtelje/marinas_txj2tg_c_scale,w_2040.png 2040w"
       }
     ],
-    "site": "http://google.se",
-    "github": "http://google.se/images"
+    "site": "https://marinas-atelje-demo.vercel.app/",
+    "github": "https://github.com/Hugocsundberg/Next_Blogg_e-handel"
   },
   {
     "title": {
@@ -95,16 +95,18 @@
         },
         "path": "images/projects/speedFeed/speedfeed_gpdasj_c_scale,w_190.jpg 190w, images/projects/speedFeed/speedfeed_gpdasj_c_scale,w_572.jpg 572w, images/projects/speedFeed/speedfeed_gpdasj_c_scale,w_841.jpg 841w, images/projects/speedFeed/speedfeed_gpdasj_c_scale,w_1068.jpg 1068w, images/projects/speedFeed/speedfeed_gpdasj_c_scale,w_1269.jpg 1269w, images/projects/speedFeed/speedfeed_gpdasj_c_scale,w_1456.jpg 1456w, images/projects/speedFeed/speedfeed_gpdasj_c_scale,w_1619.jpg 1619w, images/projects/speedFeed/speedfeed_gpdasj_c_scale,w_2012.jpg 2012w, images/projects/speedFeed/speedfeed_gpdasj_c_scale,w_2092.jpg 2092w, images/projects/speedFeed/speedfeed_gpdasj_c_scale,w_2170.jpg 2170w"
       }
-    ]
+    ],
+    "site": "https://speed-feed.herokuapp.com/",
+    "github": "https://github.com/Hugocsundberg/Speed-Feed_Social_Network"
   },
   {
     "title": {
-      "en": "Project two",
-      "sv": "Project två"
+      "en": ".this",
+      "sv": ".this"
     },
     "description": {
-      "en": "The Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis egestas pretium aenean pharetra. Orci eu lobortis elementum nibh tellus molestie. Vulputate dignissim suspendisse in est. Vel pharetra vel turpis nunc. Malesuada nunc vel risus commodo. Nisi vitae suscipit tellus mauris. Posuere morbi leo urna molestie at elementum eu. Urna duis convallis convallis tellus. Urna molestie at elementum eu. Nunc sed blandit libero volutpat.",
-      "sv": "Lorem ipsumen dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis egestas pretium aenean pharetra. Orci eu lobortis elementum nibh tellus molestie. Vulputate dignissim suspendisse in est. Vel pharetra vel turpis nunc. Malesuada nunc vel risus commodo. Nisi vitae suscipit tellus mauris. Posuere morbi leo urna molestie at elementum eu. Urna duis convallis convallis tellus. Urna molestie at elementum eu. Nunc sed blandit libero volutpat."
+      "en": "This portfolio is designed by me using the tool figma. The page is designed to be simple and straightforward. I have gone from using react on my previous portfolio to a tech stack better adapted to the purpose with tailwindCSS, Typescript and static generator 11ty to be able to easily update the page's content. The site uses only a few low-dependency libs and uses ES6 imports instead of a commonJS bundler.",
+      "sv": "Den här portfolion är designad av mig med hjälp av verktyget figma. Sidan är designad för att vara enkel och rakt på sak. Jag har gått ifrån att använda react på min förra portfolio till en tech-stack bättre anpassad till ändamålet med tailwindCSS, Typescript och static generator 11ty för att enkelt kunna uppdatera sidans innehåll. Sidan använder sig endast av ett fåtal low-dependency libs och använder ES6-importer istället för en commonJS bundler."
     },
     "technnologies": [
       {
@@ -116,6 +118,16 @@
         "slug": "tailwind",
         "name": "TailwindCSS",
         "path": "images/icons/tailwind.png"
+      },
+      {
+        "slug": "11ty",
+        "name": "11ty",
+        "path": "images/icons/11ty.png"
+      },
+      {
+        "slug": "animejs",
+        "name": "AnimeJS",
+        "path": "images/icons/animejs.jpeg"
       }
     ],
     "images": [
@@ -124,8 +136,9 @@
           "en": "image",
           "sv": "bild"
         },
-        "path": "images/projects/project2/person.jpg"
+        "path": "images/projects/this/walling-e_MdMMKrgdY-unsplash_mzzpev_c_scale,w_190.jpg 190w, images/projects/this/walling-e_MdMMKrgdY-unsplash_mzzpev_c_scale,w_528.jpg 528w, images/projects/this/walling-e_MdMMKrgdY-unsplash_mzzpev_c_scale,w_767.jpg 767w, images/projects/this/walling-e_MdMMKrgdY-unsplash_mzzpev_c_scale,w_972.jpg 972w, images/projects/this/walling-e_MdMMKrgdY-unsplash_mzzpev_c_scale,w_1158.jpg 1158w, images/projects/this/walling-e_MdMMKrgdY-unsplash_mzzpev_c_scale,w_1335.jpg 1335w, images/projects/this/walling-e_MdMMKrgdY-unsplash_mzzpev_c_scale,w_1496.jpg 1496w, images/projects/this/walling-e_MdMMKrgdY-unsplash_mzzpev_c_scale,w_1632.jpg 1632w, images/projects/this/walling-e_MdMMKrgdY-unsplash_mzzpev_c_scale,w_1780.jpg 1780w, images/projects/this/walling-e_MdMMKrgdY-unsplash_mzzpev_c_scale,w_1913.jpg 1913w, images/projects/this/walling-e_MdMMKrgdY-unsplash_mzzpev_c_scale,w_2114.jpg 2114w, images/projects/this/walling-e_MdMMKrgdY-unsplash_mzzpev_c_scale,w_2170.jpg 2170w"
       }
-    ]
+    ],
+    "github": "https://github.com/Hugocsundberg/Speed-Feed_Social_Network"
   }
 ]
