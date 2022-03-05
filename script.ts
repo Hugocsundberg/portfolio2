@@ -34,7 +34,6 @@ tl.add(
 
 // Scroll to top arrow
 const scrollTriggerPosition = 600;
-const scrollContainer = document.querySelector("#scroll-container");
 const scrollToTopButton: HTMLButtonElement | null =
   document.querySelector("a.scroll-to-top");
 let mouseXPosition = 0;
@@ -44,8 +43,8 @@ window.addEventListener("mousemove", (e) => {
   mouseXPosition = e.clientX;
 });
 
-scrollContainer?.addEventListener("scroll", () => {
-  if (scrollContainer.scrollTop > scrollTriggerPosition) {
+window.addEventListener("scroll", () => {
+  if (window.scrollY > scrollTriggerPosition) {
     setTimeout(() => {
       arrowCanMove = true;
     }, 2000);
@@ -68,14 +67,13 @@ if (scrollToTopButton) {
   });
 }
 
-scrollContainer?.addEventListener("scroll", (e) => {
-  const target = e.target as HTMLElement | null;
+window.addEventListener("scroll", (e) => {
   const hasPressedArrowInformationOkButton =
     window.localStorage.getItem("hasPressedArrowInformationOkButton") === "true"
       ? true
       : false;
 
-  if (target && target.scrollTop > scrollTriggerPosition) {
+  if (window.scrollY > scrollTriggerPosition) {
     document.querySelector(".top-arrow")?.classList.add("scale-1");
     if (!hasPressedArrowInformationOkButton)
       setTimeout(() => {
