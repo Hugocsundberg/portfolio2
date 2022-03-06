@@ -51,6 +51,7 @@ layout: layouts/base.njk
                 </div>
                 <div class="{{textCardBaseStyle}}">
             {% endif %}
+                <h2 class="text-3xl mb-5 font-bold" data-en="{{project.title.en}}">{{project.title.sv}}</h2>
                 <p class="mb-3" data-en="{{project.description.en}}">{{project.description.sv}}</p>
                 {% if(project.site) %}
                 <div class="flex gap-3 mb-3">
