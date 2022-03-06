@@ -56,16 +56,16 @@ layout: layouts/base.njk
                 {% if(project.site) %}
                 <div class="flex gap-3 mb-3">
                     <img class="w-6" src="images/icons/site-icon.svg" alt="">
-                    <a class="bg-gradientDarkRed {{textGradientOnHover}} underline" href="{{project.site}}" data-en="Visit the site">Besök sidan</a>
+                    <a target="_blank" class="bg-gradientDarkRed {{textGradientOnHover}} underline" href="{{project.site}}" data-en="Visit the site">Besök sidan</a>
                 </div>
                 {% endif %}
                 {% if(project.github) %}
                 <div class="flex gap-3 mb-3">
                     <img class="w-6" src="images/icons/gh-icon.svg" alt="">
                     {% if(project.site) %}
-                    <a class="bg-gradientDarkBlue {{textGradientOnHover}} underline" href="{{project.github}}" data-en="Or check out the github repository" >Eller kolla in repot på github</a>
+                    <a target="_blank" class="bg-gradientDarkBlue {{textGradientOnHover}} underline" href="{{project.github}}" data-en="Or check out the github repository" >Eller kolla in repot på github</a>
                     {% else %}
-                    <a class="bg-gradientDarkBlue {{textGradientOnHover}} underline" href="{{project.github}}" data-en="Check out the github repository" >Kolla in repot på github</a>
+                    <a target="_blank" class="bg-gradientDarkBlue {{textGradientOnHover}} underline" href="{{project.github}}" data-en="Check out the github repository" >Kolla in repot på github</a>
                     {% endif %}
                 </div>
                 {% endif %}
@@ -84,15 +84,15 @@ layout: layouts/base.njk
                 <p data-en="Hello, I am a 26-year-old technology nerd who's currently studying web development at Yrgo and will graduate this summer. I have previously studied and worked as a production manager at a web development company in Gothenburg. After a few years of being in the IT and web sphere, I can not see myself working in any other industry. When I am not programming, I like to work out or play disc golf. I have a great interest in design and UX and believe that good design and UX is key for good functionality to be able to deliver value Programming is my hobby and passion." class="mb-5 md:mb-7">Tjena, Jag är en 26-årig tekniknörd som studerar till webbutvecklare på Yrgo och tar examen i sommar. Jag har tidigare studerat och arbetat som produktionsledare på ett webbutvecklings-bolag i Göteborg. Efter några år av att befinna mig inom IT- och webbsfären så kan jag inte se mig arbeta inom någon annan bransch. När jag inte programmerar så gillar jag att träna eller spela disc-golf. Jag har ett stort intresse för design och UX och anser att bra design och UX är ett måste för att bra funktionalitet ska kunna leverera värde. Programmering är min hobby och passion.</p>
                 <div class="flex gap-3 mb-3">
                     <img class="w-6" src="images/icons/gh-icon.svg" alt="">
-                    <a class="bg-gradientDarkBlue {{textGradientOnHover}} underline" href="https://github.com/Hugocsundberg" data-en="Check out my github for more projects">Kolla in min github för fler projekt</a>
+                    <a target="_blank" class="bg-gradientDarkBlue {{textGradientOnHover}} underline" href="https://github.com/Hugocsundberg" data-en="Check out my github for more projects">Kolla in min github för fler projekt</a>
                 </div>
                 <div class="flex gap-3 mb-3">
                     <img class="w-6" src="images/icons/linkedin.svg" alt="">
-                    <a class="bg-gradientDarkRed {{textGradientOnHover}} underline" href="https://www.linkedin.com/in/hugosundberg/" data-en="My linkedIn profile" >Min LinkedIn profil</a>
+                    <a target="_blank" class="bg-gradientDarkRed {{textGradientOnHover}} underline" href="https://www.linkedin.com/in/hugosundberg/" data-en="My linkedIn profile" >Min LinkedIn profil</a>
                 </div>
                 <div class="flex gap-3 mb-3">
                     <img class="w-6" src="images/icons/document.svg" alt="">
-                    <a class="bg-gradientDarkBlue {{textGradientOnHover}} underline" href="https://hugosundbergcv.netlify.app/?lang" data-en="Resume">CV</a>
+                    <a target="_blank" class="bg-gradientDarkBlue {{textGradientOnHover}} underline" href="https://hugosundbergcv.netlify.app/?lang" data-en="Resume">CV</a>
                 </div>
             </div>
         </div>
