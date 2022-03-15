@@ -26,8 +26,8 @@ layout: layouts/base.njk
     {% set techImageBaseStyle = "h-full w-full shadow-card-small relative invisible xs:visible rounded-icon-small md:rounded-icon-medium object-cover" %}
     {% for project in projects %}
     {% set imageSrc = project.images[0].path %}
-    <section {% if(loop.first) %} id="projects" {% endif %} class="relative mb-16 xs:h-screen snap-start w-full flex items-center">
-        <div class="w-full">
+    <section {% if(loop.first) %} id="projects" {% endif %} class="relative mb-16 h-full snap-start w-full flex items-center">
+        <div class="w-full h-full">
             {% if loop.index % 2 == 0 %}
         {# Image to right #}
                 <div class="max-w-[1024px] ml-auto relative translate-x-small md:translate-x-medium lg:translate-x-large right-0 w-full">
