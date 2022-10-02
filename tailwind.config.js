@@ -25,6 +25,12 @@ module.exports = {
         gradientDarkRed: "400% 400%",
         gradientDarkBlue: "400% 400%",
       },
+      transitionDuration: {
+        card: "500ms",
+      },
+      transitionTimingFunction: {
+        card: "cubic-bezier(.41,.52,.28,1.03)",
+      },
       backgroundImage: {
         gradient:
           "linear-gradient(119deg, rgba(255,255,255,1) 17%, rgba(206,247,255,1) 57%, rgba(251,255,162,1) 100%);",
@@ -32,14 +38,14 @@ module.exports = {
         gradientDarkRed: "linear-gradient(-45deg, #ee7752, #e73c7e, #de75f5)",
       },
       borderRadius: {
-        "image-medium": "0 20px 20px 0",
-        "image-small": "0 10px 10px 0",
-        "image-medium-right": "20px 0 0 20px",
-        "image-small-right": "10px 0 0 10px",
-        "card-medium": "20px",
-        "card-small": "10px",
-        "icon-medium": "11px 11px 11px 11px",
-        "icon-small": "7px 7px 7px 7px",
+        "image-medium": "0 16px 16px 0",
+        "image-small": "0 8px 8px 0",
+        "image-medium-right": "16px 0 0 16px",
+        "image-small-right": "8px 0 0 8px",
+        "card-medium": "16px",
+        "card-small": "8px",
+        "icon-medium": "8px 8px 8px 8px",
+        "icon-small": "5px 5px 5px 5px",
       },
       spacing: {
         small: "32px",
