@@ -2,9 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 .move-right {
@@ -14,7 +17,6 @@
 
 .top-arrow {
   transform: scale(0);
-  transition: 500ms;
 }
 
 .scale-1 {
@@ -23,7 +25,6 @@
 
 .info-card {
   transform: translateX(calc(-100% - 24px));
-  transition: 500ms;
 }
 
 .translate-x-0 {
@@ -36,4 +37,12 @@
 
 .show-child-p-on-hover:hover p {
   opacity: 1;
+}
+
+.beforeAnimation {
+  transform: translateY(200px);
+}
+
+.afterAnimation {
+  transform: translateY(0);
 }

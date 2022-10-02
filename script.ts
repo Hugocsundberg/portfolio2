@@ -102,20 +102,13 @@ arrowInformationButton?.addEventListener("click", () => {
 // Add animation to cards on scroll
 const observables = document.querySelectorAll(".shall-animate");
 
-const animateIn = (target: Element) => {
-  anime({
-    targets: target,
-    translateY: [200, 0],
-    easing: "spring(1, 80, 17, 1)",
-  });
-};
-
 const observer = new IntersectionObserver((e) => {
   e.forEach((entry) => {
     if (!entry.isIntersecting) return;
     if (!entry.target.classList.contains("shall-animate")) return;
     entry.target.classList.remove("shall-animate");
-    animateIn(entry.target);
+    entry.target.classList.remove("beforeAnimation");
+    entry.target.classList.add("afterAnimation");
   });
 });
 
